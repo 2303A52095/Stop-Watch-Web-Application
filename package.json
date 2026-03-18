@@ -1,0 +1,9 @@
+{
+  "name": "stopwatch-web-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static stopwatch web app with a local Node server",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

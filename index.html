@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch Web App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="stopwatch-card" aria-labelledby="app-title">
+      <p class="eyebrow">Precision Timing</p>
+      <h1 id="app-title">Stopwatch Web App</h1>
+      <p class="subtitle">Track time, pause when needed, and capture laps with a clean static web app.</p>
+
+      <div class="time-display" id="display" aria-live="polite">00:00:00:000</div>
+
+      <div class="controls" aria-label="Stopwatch controls">
+        <button id="startBtn" class="btn btn-primary" type="button">Start</button>
+        <button id="pauseBtn" class="btn btn-secondary" type="button">Pause</button>
+        <button id="resetBtn" class="btn btn-secondary" type="button">Reset</button>
+        <button id="lapBtn" class="btn btn-accent" type="button">Lap</button>
+      </div>
+
+      <section class="laps-panel" aria-labelledby="laps-title">
+        <div class="laps-header">
+          <h2 id="laps-title">Laps</h2>
+          <span id="lapCount">0 entries</span>
+        </div>
+        <ol id="lapsList" class="laps-list" aria-live="polite"></ol>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
